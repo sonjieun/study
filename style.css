@@ -1,0 +1,15 @@
+.login_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login_logo{
+    width: 20px;
+    height: 20px;
+}
+
+li{
+    list-style-type : none
+}
