@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_review.css">
+    <title>엑스포츠뉴스 로그인</title>
+</head>
+<body>
+    <!-- wrap :바탕영역 -->
+    <div class="wrap">
+        <!-- login_box : width 480px을 가지고있는 컨텐츠를 모두 감싸고있는 box-->
+        <div class="login_box">
+            <!-- 아래 검정색 줄은 css 로 border : 1px solid #컬러 로 줄것  : TODO_ (css) border 학습  -->
+            <!-- top 영역-->
+            <header class="login_header">
+                <img src="./img/logo.png" width="118"/>
+            </header>
+            
+             <!-- mid 영역-->
+            <div class="login_main">
+                <h2>
+                    로그인     
+                </h2>
+                <!-- 소셜 로그인-->
+                <ul class="social_login">
+                    <li>
+                        <div>
+                            <!-- 로고는 디자인요소니까 아래 button 에 background로 넣어줄게요! -->
+                            <button type="button"> 카카오로 로그인</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <!-- 로고는 디자인요소니까 아래 button 에 background로 넣어줄게요! -->
+                            <button type="button"> 네이버로 로그인</button>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 이메일 로그인 -->
+                <div class="login_email">
+                    <div>이메일 로그인</div>
+                    <div>
+                        <input type="text" placeholder="이메일을 입력해주세요" />
+                        <input type="text" placeholder="비밀번호를 입력해주세요" />
+                    </div>
+                    <div>
+                        <input type="checkbox" id="loginRemember" checked /> 
+                        <!-- input 과 label 의 관계 알아보기-->
+                        <label for='loginRemember'>로그인 유지</label>
+                    </div>
+                    <button>로그인</button>
+                    <!-- 찾기-->
+                    <div>
+                        <!-- TODO 링크로 이동하는 태그의 경우 a 태그로 써주면 좋아요 :-) -->
+                        <a href="#">이메일 찾기</a>
+                        <a href="#">비밀번호 찾기</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- bottom 영역 -->    
+             <div class="join">
+                <!-- 느낌표모양은 그냥 디자인요소니까 아래 span 에 background로 넣어줄게요! -->
+                <span>아직 회원이 아니라면!</span>
+                <a href="#">회원가입하세요 ></a>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

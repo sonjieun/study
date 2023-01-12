@@ -1,0 +1,34 @@
+
+/*html에 기본적으로 먹혀있는 css 를 reset 해주는 css*/
+/*reset css 관련해서 찾아보고 아래 부분에 복붙해서 살펴보기*/
+body, ul,li, header, div, p, img,span, a, ol, table {
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type : none
+}
+
+/*
+==========================reset=================================
+*/
+
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+}
+.login_box {
+    width: 480px;
+    margin : 50px auto;
+    border:1px solid #d9d9d9; /*네모칸 잘보이라고 임의로 준 border입니다.*/
+}
+
+/*
+===========================과제=================================
+1. font-size, font-weight, text-align 학습해서 모든 태그의 text속성의 css 먹여보기
+2. border 학습해서 border가 들어가있는 태그에 border 먹여보기 (네이버로로그인)
+3. 추가로 전달한 psd 파일 html 태그 짜보기
+*/
