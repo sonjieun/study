@@ -1,9 +1,25 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none; 
+}
+
+
+/*위에 리셋 적용하기*/
+/*display flex는 남발하면 나중에 유지보수가 어려워지는경향이 있으니 
+정렬시에 float,display:inline-block, display:table 등등 정렬할수있는 여러가지 방식을 같이 쓰는게 좋아요!*/
+
 .login_header{
     width: 100%;
 }
+
 .login_main{
     font-family: 'Noto Sans KR', sans-serif;
 }
+
 .login_flex{
     display: flex;
     justify-content: center;
@@ -22,23 +38,13 @@
     text-align: center;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    list-style: none; 
-}
-
 .login_kakao{
     font-size: 16pt;
     font-weight: 400;
-    text-align: center;
-    border-color: #fee500;
+    /* border-color: #fee500; */
+    /*SH 20230113 _ 여기는 보더 컬러뿐만 아니라 스타일도 달라서 아래처럼 넣어줄게요*/
+    border:1px solid #fee500;
     background-color: #fee500;
-    width: 100%;
-    height: 44px;
 }
 
 .login_naver{
@@ -46,10 +52,25 @@ li{
     font-weight: 400;
     color: #04cf5d;
     text-align: center;
-    border-color: #04cf5d;
-    background-color: transparent;
+    /* border-color: #04cf5d; */
+    /* background-color: transparent; 어차피 흰색이라 안넣어주어도됩니다 */
+    /*SH 20230113 _ 여기는 보더 컬러뿐만 아니라 스타일도 달라서 아래처럼 넣어줄게요*/
+    border:1px solid #04cf5d;
+}
+
+.login_button{
+    font-size: 16pt;
+    font-weight: 500;
+    color: white;
+    background-color: #2f2f2f;
+}
+
+/*login_button login_email login_naver 버튼 3개는 공통적인 성향이 많으니 공통 class를 하나빼면 좋을듯해요. btn_round 라는 클래스를 추가로 줘서 css 를 먹여줄게요! */
+.btn_round {
     width: 100%;
     height: 44px;
+    text-align: center;
+    border-radius: 25px;
 }
 
 .login_email{
@@ -62,6 +83,8 @@ li{
     margin: 0;
 }
 
+
+
 .login_email::before{
     content: "";
     flex-grow: 1;
@@ -71,6 +94,7 @@ li{
     line-height: 0px;
     margin: 0px 10px 0px 0px;
 }
+
 .login_email::after{
     content: "";
     flex-grow: 1;
@@ -96,14 +120,7 @@ li{
     font-weight: 300;
 }
 
-.login_button{
-    font-size: 16pt;
-    font-weight: 500;
-    text-align: center;
-    color: white;
-    background-color: #2f2f2f;
-    width: 100%;
-}
+
 
 .login_find{
     text-align: center;
@@ -113,14 +130,12 @@ li{
     font-size: 14pt;
     font-weight: 300;
     border: none;
-    background-color:transparent;
 }
 
 .login_find_password{
     font-size: 14pt;
     font-weight: 300;
     border: none;
-    background-color:transparent;
 }
 
 .login_not_member{
@@ -132,5 +147,4 @@ li{
     font-size: 14pt;
     font-weight: 300;
     border: none;
-    background-color:transparent;
 }
