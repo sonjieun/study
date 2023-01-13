@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>엑스포츠뉴스 로그인</title>
 </head>
@@ -18,57 +20,52 @@
                 <hr color="black" size="2">
             </div> 
 <!-- 로그인 -->
-            <main class="login_main">
-                <div>
-                    <h2>
+            <main>
+                <div class="login_main">
+                    <h2 class="login_top_login">
                         로그인     
                     </h2>
 <!-- 소셜 로그인-->
-                    <ul>
-                        <li>
-                            <div>
-                                <button type="button"> <img class="login_logo" src="./img/kakao_login.png"/> 카카오로 로그인</button>
-                            </div>
+                    <ul class="login_social">
+                        <li class="login_kakao">
+                            <button class="login_kakao" type="button"> <img class="login_logo" src="./img/kakao_login.png"/> 카카오로 로그인</button>
                         </li>
-                        <li>
-                            <div>
-                                <button type="button"> <img class="login_logo" src="./img/naver_login.png"/> 네이버로 로그인</button>
-                            </div>
+                        <li class="login_naver">
+                            <button class="login_naver" type="button"> <img class="login_logo" src="./img/naver_login.png"/> 네이버로 로그인</button>
                         </li>
                     </ul>
 <!-- 이메일 로그인 -->
-                    <div>
+                    <div class="login_email">
                         이메일 로그인
                     </div>
                     <div>
-                        <input type="text" placeholder="이메일을 입력해주세요" />
+                        <input class="login_id" type="text" placeholder="이메일을 입력해주세요" />
                     </div>
                     <div>
-                        <input type="text" placeholder="비밀번호를 입력해주세요" />
+                        <input class="login_pw" type="text" placeholder="비밀번호를 입력해주세요" />
                     </div>
                     <div>
-                        <input type="checkbox" checked /> 로그인 유지
+                        <input class="login_keep" type="checkbox" checked /> 로그인 유지
                     </div>
-                    <!-- button 에 type 명시 -->
-                    <button type="button">로그인</button>
+                    <button class="login_button">로그인</button>
 <!-- 찾기-->
-                    <div>
-                        <button>이메일 찾기</button>
-                        <button>비밀번호 찾기</button>
+                    <div class="login_find">
+                        <button class="login_find_email">이메일 찾기</button>
+                        <button class="login_find_password">비밀번호 찾기</button>
                     </div>
-                </div>
 <!-- 회원가입 -->
                 <hr color="black" size="1">    
                 <div>
                     <div>
                         <img class="login_logo" src="./img/join.png" />
-                    </div>
-                    <span>
+                    <span class="login_not_member">
                         아직 회원이 아니라면!
                     </span>
-                    <button>
+                    <button class="login_join">
                         회원가입하세요 >
                     </button>
+                    </div>
+                </div>
                 </div>
             </main>
         </div> 
