@@ -27,7 +27,7 @@ a {
 .login_box {
     width: 480px;
     margin : 50px auto;
-    border:1px solid #d9d9d9; /*네모칸 잘보이라고 임의로 준 border입니다.*/
+    /* border:1px solid #d9d9d9; 네모칸 잘보이라고 임의로 준 border입니다.*/
 }
 
 /*

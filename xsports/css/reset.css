@@ -1,0 +1,14 @@
+body, ul,li, header, div, p, img,span, a, ol, table {
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+    color: #111;
+}
+
+ul{
+    list-style-type : none
+}
+
+a {
+    text-decoration: none;
+}
