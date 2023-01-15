@@ -12,6 +12,12 @@ li{
     list-style: none; 
 }
 
+input::placeholder{
+    font-size: 13pt;
+    color: #ababab;
+    padding-left: 20px;
+    font-weight: 200;
+}
 
 /*위에 리셋 적용하기*/
 /*display flex는 남발하면 나중에 유지보수가 어려워지는경향이 있으니 
@@ -19,7 +25,17 @@ li{
 
 .login_header{
     width: 100%;
-    border-bottom: 1px solid #221e1f;
+    border-bottom: 2px solid #221e1f;
+}
+
+.login_box {
+    width: 480px;
+    margin : 50px auto;
+    /* border:1px solid #d9d9d9; 네모칸 잘보이라고 임의로 준 border입니다.*/
+}
+
+.xsports_logo{
+    margin-bottom: 20px;
 }
 
 .login_main{
@@ -29,7 +45,7 @@ li{
 .wrap{
     width: 100%;
     height: 100vh;
-    
+    margin: 30px;
 }
 
 .login_logo{
@@ -41,33 +57,38 @@ li{
     font-size: 24pt;
     font-weight: 500;
     text-align: center;
+    margin: 48px;
 }
 
-.login_kakao{
+.login_kakao_btn{
     font-size: 16pt;
     font-weight: 400;
     /* border-color: #fee500; */
     /*SH 20230113 _ 여기는 보더 컬러뿐만 아니라 스타일도 달라서 아래처럼 넣어줄게요*/
     border:1px solid #fee500;
     background-color: #fee500;
+    margin-bottom: 15px;
 }
 
-.login_naver{
+.login_naver_btn{
     font-size: 16pt;
     font-weight: 400;
     color: #04cf5d;
     text-align: center;
+    background-color: #ffffff;
     /* border-color: #04cf5d; */
     /* background-color: transparent; 어차피 흰색이라 안넣어주어도됩니다 */
     /*SH 20230113 _ 여기는 보더 컬러뿐만 아니라 스타일도 달라서 아래처럼 넣어줄게요*/
-    border:1px solid #04cf5d;
+    border:2px solid #04cf5d;
 }
 
-.login_button{
+.login_btn{
     font-size: 16pt;
     font-weight: 500;
     color: white;
     background-color: #2f2f2f;
+    margin-top: 40px;
+    height: 48px;
 }
 
 /*login_button login_kakao login_naver 버튼 3개는 공통적인 성향이 많으니 공통 class를 하나빼면 좋을듯해요. btn_round 라는 클래스를 추가로 줘서 css 를 먹여줄게요! */
@@ -86,9 +107,9 @@ li{
     align-items: center;
     color: black;
     margin: 0;
+    margin-top: 48px;
+    margin-bottom: 25px;
 }
-
-
 
 .login_email::before{
     content: "";
@@ -113,11 +134,20 @@ li{
 .login_id{
     width: 100%;
     height: 48px;
+    border: 2px solid;
+    border-color: #b4b4b4;
+    margin-bottom: 15px;
 }
 
 .login_pw{
     width: 100%;
     height: 48px;
+    border: 2px solid;
+    border-color: #b4b4b4;
+}
+
+.login_remember{
+    margin-top: 20px;
 }
 
 label[for="loginRemember"]{
@@ -128,6 +158,8 @@ label[for="loginRemember"]{
 .login_find{
     text-align: center;
     border-bottom: 1px solid #221e1f;
+    margin-top: 25px;
+    padding-bottom: 25px;
 }
 
 .login_find_email{
@@ -144,6 +176,10 @@ label[for="loginRemember"]{
     background-color: transparent;
 }
 
+.join{
+    margin-top: 25px;
+}
+
 .login_not_member{
     font-size: 14pt;
     font-weight: 300;
@@ -154,4 +190,28 @@ label[for="loginRemember"]{
     font-weight: 300;
     border: none;
     background-color: transparent;
+}
+
+.find_pw_text{
+    font-size: 16pt;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.enter_email{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 48px;
+    border: 2px solid;
+    border-color: #b4b4b4;
+}
+
+.send_email_btn{
+    background-color: #2f2f2f;
+    color: white;
+    border: none;
+    font-size: 16pt;
+    font-weight: 500;
+    height: 48px;
 }

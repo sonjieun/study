@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/login_style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>로그인</title>
 </head>
 <body>
     <div class="wrap">
         <div class="login_box">
             <header class="login_header">
-                <img src="../img/logo.png" width="118"/>
+                <img class="xsports_logo" src="../img/logo.png" width="118"/>
             </header>
 <!-- 로그인 -->
             <div class="login_main">
@@ -24,25 +23,23 @@
 <!-- 소셜 로그인-->
                 <ul class="social_login">
                     <li class="social"> <!-- class 네임이 중복되면 같은 css가 먹어용! 하나는 빼줄게요 -->
-                        <button class="login_kakao btn_round" type="button"> 카카오로 로그인</button>
+                        <button class="login_kakao_btn btn_round" type="button"> 카카오로 로그인</button>
                     </li>
                     <li class="social">
-                        <button class="login_naver btn_round" type="button"> 네이버로 로그인</button>
+                        <button class="login_naver_btn btn_round" type="button"> 네이버로 로그인</button>
                     </li>
                 </ul>
 <!-- 이메일 로그인 -->
                 <div class="login_email">
                     이메일 로그인
                 </div>
-                <div>
-                    <input class="login_id" type="text" placeholder="이메일을 입력해주세요" />
-                    <input class="login_pw" type="text" placeholder="비밀번호를 입력해주세요" />
-                </div>
-                <div>
+                <input class="login_id" type="text" placeholder="이메일을 입력해주세요" />
+                <input class="login_pw" type="text" placeholder="비밀번호를 입력해주세요" />
+                <div class="login_remember">
                     <input  id="loginRemember" type="checkbox" checked />
                     <label for='loginRemember'>로그인 유지</label> 
                 </div>
-                <button class="login_button btn_round">로그인</button>
+                <button class="login_btn btn_round">로그인</button>
 <!-- 찾기-->
                 <div class="login_find">
                     <a href="#" class="login_find_email">이메일 찾기</a>
@@ -50,7 +47,7 @@
                 </div>
 <!-- 회원가입 -->
                 <div>
-                    <div>
+                    <div class="join">
                         <span class="login_not_member"> 아직 회원이 아니라면! </span>
                         <a href="#" class="login_join"> 회원가입하세요 > </a>
                     </div>
