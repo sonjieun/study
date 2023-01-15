@@ -45,7 +45,6 @@ input::placeholder{
 .wrap{
     width: 100%;
     height: 100vh;
-    margin: 30px;
 }
 
 .login_logo{
