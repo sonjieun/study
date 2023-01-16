@@ -224,7 +224,7 @@ label[for="loginRemember"]{
 
 ex /
 
-.ct_login .login_btn < 이런식으로 필요한 부분만 감싸주세요
+.ct_login .login_btn < 이런식으로 필요한 부분만 감싸주세요 (주의! 다른페이지에서도 쓰고있는 CLASS는 감싸주지말것)
 
 2. padding 공부해서 내부 컨텐츠를 디자인파일이랑 동일하게 밀어주세요.
 
