@@ -31,6 +31,7 @@ input::placeholder{
 .login_box {
     width: 480px;
     margin : 50px auto;
+    
     /* border:1px solid #d9d9d9; 네모칸 잘보이라고 임의로 준 border입니다.*/
 }
 
@@ -45,6 +46,7 @@ input::placeholder{
 .wrap{
     width: 100%;
     height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .login_logo{
@@ -192,9 +194,9 @@ label[for="loginRemember"]{
     background-color: transparent;
 }
 
-.find_pw_text{
+.find_pw_text,.join_email{
     font-size: 16pt;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 48px;
 }
@@ -216,6 +218,33 @@ label[for="loginRemember"]{
     height: 48px;
 }
 
+.email_join{
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 300;
+    background-color: #f0f0f0;
+    padding: 48px;
+    margin-bottom: 48px;
+}
+
+.email{
+    font-weight: 500;
+}
+
+.email_warning{
+    margin-bottom: 48px;
+}
+.email_not_join{
+    color: #c9242b;
+    font-size: 14pt;
+    font-weight: 300;
+} 
+.email_warning_icon{
+    background-image: url( "../img/warning_icon.png" );
+    width: 20px;
+    height: 20px;
+}
 /*
 =====================================================
 
