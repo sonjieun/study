@@ -209,7 +209,7 @@ label[for="loginRemember"]{
     border-color: #b4b4b4;
 }
 
-.send_email_btn{
+.btn_style{
     background-color: #2f2f2f;
     color: white;
     border: none;
