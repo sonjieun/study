@@ -244,8 +244,10 @@ label[for="loginRemember"]{
     background-image: url( "../img/warning_icon.png" );
     width: 20px;
     height: 20px;
+    display:inline-block;
 }
 /*
+Try setting display to something other than inline.
 =====================================================
 
 1. 페이지별로 wrap에 고유한 페이지 클라스를 추가한 후 해당 페이지에서만 귀속해서 사용하는 클래스들을 캡슐화해주세요.
