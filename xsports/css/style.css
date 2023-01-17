@@ -69,6 +69,10 @@ input::placeholder{
     border:1px solid #fee500;
     background-color: #fee500;
     margin-bottom: 15px;
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url("../img/kakao_login.png");
 }
 
 .login_naver_btn{
@@ -81,6 +85,10 @@ input::placeholder{
     /* background-color: transparent; 어차피 흰색이라 안넣어주어도됩니다 */
     /*SH 20230113 _ 여기는 보더 컬러뿐만 아니라 스타일도 달라서 아래처럼 넣어줄게요*/
     border:2px solid #04cf5d;
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url("../img/naver_login.png");/* 왜인지 모르겠으나.. png파일이 svg 파일로 변환이 안되어..*/
 }
 
 .login_btn{
@@ -239,13 +247,13 @@ label[for="loginRemember"]{
     color: #c9242b;
     font-size: 14pt;
     font-weight: 300;
+    padding-left:45px;
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url("../img/exclamation_mark.png");
 } 
-.email_warning_icon{
-    background-image: url( "../img/warning_icon.png" );
-    width: 20px;
-    height: 20px;
-    display:inline-block;
-}
+
 /*
 =====================================================
 
