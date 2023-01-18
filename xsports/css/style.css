@@ -261,6 +261,7 @@ label[for="loginRemember"]{
 .join_check{
     font-size: 16pt;
     font-weight: 500;
+    
 }
 
 .join_text{
@@ -326,7 +327,14 @@ label[for="join_agree"]{
     width: 40px;
 }
 
+.join_box{
+    margin: 0 30px 0 30px;
+}
 
+.join_btn{
+    padding: 0 35px 0 35px;
+    margin-top: 40px;
+}
 /*
 =====================================================
 
