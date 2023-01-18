@@ -264,13 +264,10 @@ label[for="loginRemember"]{
 }
 
 .join_text{
-    border-left: none 0;
-    border-right: none 0;
-    border-top: none;
-    width: 100%;
+    border: none;
+    width: calc(100% - 50px);
     border-color: #2f2f2f;
     height: 40px;
-    margin: 20px 0 40px 0;
 }
 
 .join_check:after {
@@ -316,6 +313,20 @@ label[for="join_agree"]{
     border: none;
     background-color:transparent;
 }
+
+.join_input{
+    position: relative;
+    border-top: none 0;
+    border-bottom: 2px solid #2f2f2f;
+    margin-bottom: 40px;
+}
+
+.pwd_icon{
+    height: 40px;
+    width: 40px;
+}
+
+
 /*
 =====================================================
 

@@ -19,20 +19,31 @@
                 <h2 class="login_top_login">
                     회원가입
                 </h2>
+
+                <div class="join_input">
+                    <label class="join_check">이메일</label>
+                    <input class="enter_id join_text" type="text" placeholder="이메일을 입력해주세요" />
+                </div>
+                <div class="pwd_input join_input">
+                    <label class="join_check">비밀번호</label>
+                    <input class="enter_pwd join_text" type="password" placeholder="영문대소문자,숫자,특수문자 혼용 8~20자까지 가능합니다." />
+                    <img src="../img/pwd_icon.png"/>
+                </div>
+                <div class="join_input">
+                    <label class="join_check">비밀번호 재입력</label>
+                    <input class="re_enter_pwd join_text" type="password" placeholder="비밀번호를 다시 한번 입력하세요." />
+                    <img src="../img/pwd_icon.png"/>
+                </div>
                 
-                <label class="join_check">이메일</label>
-                <input class="join_text" type="text" placeholder="이메일을 입력해주세요" />
-                <label class="join_check">비밀번호</label>
-                <input class="join_text" type="text" placeholder="영문대소문자,숫자,특수문자 혼용 8~20자까지 가능합니다." />
-                <label class="join_check">비밀번호 재입력</label>
-                <input class="join_text" type="text" placeholder="비밀번호를 다시 한번 입력하세요." />
-                
-                <label class="join_check">약관동의</label>
-                <p class="agree_text">본인은 만 14세 이상이며, 엑스로츠뉴스 이용약관, 개인정보 수집 및 이용, 뉴스레터.이벤트.프로모션 정보 수신 동의(선택) 내용을 <br> 확인하였으며, 동의합니다.</p>
-                
+                <div>
+                    <label class="join_check">약관동의</label>
+                    <p class="agree_text">본인은 만 14세 이상이며, 엑스로츠뉴스 이용약관, 개인정보 수집 및 이용, 뉴스레터·이벤트·프로모션 정보 수신 동의(선택) 내용을 <br> 확인하였으며, 동의합니다.</p>
+                </div>
+                                
                 <div class="agreement-all">
                     <input id="join_agree" type="checkbox"> <label for="join_agree"> 모두 동의합니다.</label>
                 </div>
+
                 <div class="agreement-box">
                     <div class="agreement-cell">
                         <input id="agreement-age" type="checkbox"> 
@@ -51,7 +62,7 @@
                     </div>
                     <div class="agreement-cell">
                         <input id="agreement-event" type="checkbox"> 
-                        <label for="agreement-event" class="agreement_check"> (선택) 뉴스레터.이벤트.프로모션 정보 수신 동의</label>    
+                        <label for="agreement-event" class="agreement_check"> (선택) 뉴스레터·이벤트·프로모션 정보 수신 동의</label>    
                         <button class="agreement_more_btn"><img src="../img/agreement_more_icon.png"></button>
                     </div>        
                 </div>
