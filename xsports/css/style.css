@@ -14,6 +14,11 @@ li{
     list-style: none; 
 }
 
+.social_login{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 input::placeholder{
     font-size: 13pt;
     color: #ababab;
@@ -37,12 +42,16 @@ input::placeholder{
     /* border:1px solid #d9d9d9; 네모칸 잘보이라고 임의로 준 border입니다.*/
 }
 
+.find_pwd_box{
+    margin: 0 20px 0 20px;
+}
+
 .xsports_logo{
     margin-bottom: 20px;
 }
 
 .login_main{
-    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0 50px 0 50px;
 }
 
 .wrap{
@@ -179,6 +188,7 @@ label[for="loginRemember"]{
 .login_find_email{
     font-size: 14pt;
     font-weight: 300;
+    margin: 25px;
     border: none;
     background-color: transparent;
 }
@@ -186,6 +196,7 @@ label[for="loginRemember"]{
 .login_find_password{
     font-size: 14pt;
     font-weight: 300;
+    margin: 25px;
     border: none;
     background-color: transparent;
 }
@@ -197,6 +208,12 @@ label[for="loginRemember"]{
 .login_not_member{
     font-size: 14pt;
     font-weight: 300;
+    padding-left:30px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url("../img/exclamation_mark.png");
+    
 }
 
 .login_join{
@@ -204,6 +221,7 @@ label[for="loginRemember"]{
     font-weight: 300;
     border: none;
     background-color: transparent;
+    float: right;
 }
 
 .find_pw_text,.join_email{
