@@ -1,8 +1,5 @@
 /*HTML 요소에 내장된 고유 CSS 스타일 속성을 초기화 시켜서, 크로스브라우징 구현에 유용. 
  브라우저마다 기본으로 제공하는 스타일이 있어서 기본값을 주기 위해 설정*/
-
- font-family: 'Noto Sans KR', sans-serif;
-
 @import "reset.css"; 
 
 ul{
@@ -270,7 +267,7 @@ label[for="loginRemember"]{
     font-size: 14pt;
     font-weight: 300;
     padding-left:45px;
-    background-position: 20px center;
+    background-position: 20px 4px;
     background-repeat: no-repeat;
     background-size: 20px;
     background-image: url("../img/exclamation_mark.png");
@@ -356,16 +353,11 @@ label[for="join_agree"]{
 /*
 =====================================================
 
-1. 페이지별로 wrap에 고유한 페이지 클라스를 추가한 후 해당 페이지에서만 귀속해서 사용하는 클래스들을 캡슐화해주세요.
-(고유한 페이지 클래스의 명명규칙은 ct_login, ct_find_pw 등 ct_ 를 앞에 넣어줄게요./container의 약자입니다 )
+1. position absolute, relative 공부해서 제가 join 에 here 이라고 표시한 부분을 absolute 로 변경해보기
 
-ex /
+2. 숙제 하면서 모르거나 헷갈리는부분 정리해놓기 !
 
-.ct_login .login_btn < 이런식으로 필요한 부분만 감싸주세요 (주의! 다른페이지에서도 쓰고있는 CLASS는 감싸주지말것)
-
-2. padding 공부해서 내부 컨텐츠를 디자인파일이랑 동일하게 밀어주세요.
-
-3. google font 를 연동해서 noto sans 폰트를 먹여주세요
+3. join_email, find_password, join, login > div에 부분적으로 padding을 먹여서 디자인파일이랑 동일하게 만들어주세요!
 
 =====================================================
 */

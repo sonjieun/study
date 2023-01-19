@@ -3,6 +3,7 @@ body, ul,li, header, div, p, img,span, a, ol, table {
     padding:0;
     box-sizing: border-box;
     color: #111;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 ul{
