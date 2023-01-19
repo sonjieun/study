@@ -2,15 +2,6 @@
  브라우저마다 기본으로 제공하는 스타일이 있어서 기본값을 주기 위해 설정*/
 @import "reset.css"; 
 
-ul{
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    list-style: none; 
-}
-
 .social_login{
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +14,6 @@ input::placeholder{
     letter-spacing: -2px;
 }
 
-/*위에 리셋 적용하기*/
 /*display flex는 남발하면 나중에 유지보수가 어려워지는경향이 있으니 
 정렬시에 float,display:inline-block, display:table 등등 정렬할수있는 여러가지 방식을 같이 쓰는게 좋아요!*/
 
