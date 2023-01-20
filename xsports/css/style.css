@@ -298,7 +298,8 @@ label[for="join_agree"]{
     font-weight: 500;
 }
 
-.agree_check{
+.agreement_check{
+    width: 100%;
     font-size: 14pt;
     font-weight: 300;
 }
@@ -311,13 +312,21 @@ label[for="join_agree"]{
     margin-bottom: 5px;
 }
 
-.agreement_more_btn{
-    float: right;
-}
 
 .agreement_more_btn{
+    position: absolute;
     border: none;
     background-color:transparent;
+    bottom: 50px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url("../img/agreement_more_icon.png");
+}
+
+.more{
+    position: absolute;
+    overflow: :hidden;
 }
 
 .join_input{
@@ -325,6 +334,14 @@ label[for="join_agree"]{
     border-top: none 0;
     border-bottom: 2px solid #2f2f2f;
     margin-bottom: 40px;
+}
+
+.pwd_view{
+    position: absolute;
+    top: 37px;
+    right: 0;
+    width: 30px;
+    height: 30px;
 }
 
 .pwd_icon{

@@ -15,7 +15,7 @@
             <header class="login_header">
                 <img class="xsports_logo" src="../img/logo.png" width="118"/>
             </header>
-            <div class="join_box">
+            <div class="join_box">비밀번호 눈모양 아이콘
                 <h2 class="login_top_login">
                     회원가입
                 </h2>
@@ -28,12 +28,16 @@
                     <label class="join_check">비밀번호</label>
                     <input class="enter_pwd join_text" type="password" placeholder="영문대소문자,숫자,특수문자 혼용 8~20자까지 가능합니다." />
                     <!-- here 여기 눈 이미지를 absolute 로 변경해보기-->
-                    <img src="../img/pwd_icon.png"/>
+                    <div class="pwd_view">
+                        <img src="../img/pwd_icon.png"/>
+                    </div>
                 </div>
                 <div class="join_input">
                     <label class="join_check">비밀번호 재입력</label>
                     <input class="re_enter_pwd join_text" type="password" placeholder="비밀번호를 다시 한번 입력하세요." />
-                    <img src="../img/pwd_icon.png"/>
+                    <div class="pwd_view">
+                        <img src="../img/pwd_icon.png"/>
+                    </div>
                 </div>
                 
                 <div>
@@ -50,22 +54,22 @@
                         <input id="agreement-age" type="checkbox"> 
                         <label for="agreement-age" class="agreement_check"> (필수) 만 14세 이상입니다.</label>
                         <!-- here 여기 토글버튼 absolute 로 변경해보기 + 이미지말고 background로 처리해보기 -->
-                        <button class="agreement_more_btn"><img src="../img/agreement_more_icon.png"></button>
+                            <button class="agreement_more_btn"></button>
                     </div>
                     <div class="agreement-cell">
                         <input id="agreement-service" type="checkbox"> 
                         <label for="agreement-service" class="agreement_check"> (필수) 이용약관</label>    
-                        <button class="agreement_more_btn"><img src="../img/agreement_more_icon.png"></button>
+                        <button class="agreement_more_btn"><span class="more">더보기</span></button>
                     </div>
                     <div class="agreement-cell">
                         <input id="agreement-policy" type="checkbox"> 
                         <label for="agreement-policy" class="agreement_check"> (필수) 개인정보 수집 및 이용</label>
-                        <button class="agreement_more_btn"><img src="../img/agreement_more_icon.png"></button>
+                        <button class="agreement_more_btn"><span class="more">더보기</span></button>
                     </div>
                     <div class="agreement-cell">
                         <input id="agreement-event" type="checkbox"> 
                         <label for="agreement-event" class="agreement_check"> (선택) 뉴스레터·이벤트·프로모션 정보 수신 동의</label>    
-                        <button class="agreement_more_btn"><img src="../img/agreement_more_icon.png"></button>
+                        <button class="agreement_more_btn"><span class="more">더보기</span></button>
                     </div>        
                 </div>
                 <div class="join_btn">
