@@ -30,7 +30,7 @@ input::placeholder{
 }
 
 .find_pwd_box{
-    margin: 0 20px 0 20px;
+    margin: 0 30px 0 30px;
 }
 
 .xsports_logo{
@@ -379,7 +379,8 @@ label[for="join_agree"]{
 }
 
 .pwd_3months_box{
-    padding: 0 10px 0 10px;
+    padding: 0 30px 0 30px;
+    text-align: center;
 }
 
 .pwd_3months_warning{
@@ -407,18 +408,32 @@ label[for="join_agree"]{
     height: 48px;
 }
 
+.pwd_3months_btn{
+    display: inline-block;
+    width: 48%;
+}
+
 .later_change{
     background-color: #b9b9b9;
     color: white;
-    width: 50%;
+    width: 100%;
 }
 
 .pwd_change{
     background-color: #2f2f2f;
     color: white;
-    width: 50%;
+    width: 100%;
 }
 
+.join_email_body{
+    padding: 0 40px 0 40px;
+}
+
+.resend_email_btn{
+    margin: 0 40px 0 40px;
+    width: 80%;
+    float: inline-block;
+}
 
 /*
 =====================================================
