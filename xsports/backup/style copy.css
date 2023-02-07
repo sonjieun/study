@@ -2,8 +2,10 @@
  브라우저마다 기본으로 제공하는 스타일이 있어서 기본값을 주기 위해 설정*/
 @import "reset.css"; 
 
+
+
 input::placeholder{
-    font-size: 13px;
+    font-size: 13pt;
     color: #ababab;
     font-weight: 200;
     letter-spacing: -2px;
@@ -16,17 +18,7 @@ input::placeholder{
 common
 ===========================================================================
 */
-.wrap{
-    width: 480px;
-    height: 100vh;
-    font-family: 'Noto Sans KR', sans-serif;
-    padding: 32px;
-}
 
-.box{
-    border: 1px solid #d9d9d9;
-    padding: 0 30px;
-}
 
 .btn_round {
     width: 100%;
@@ -35,48 +27,64 @@ common
     border-radius: 25px;
 }
 
-.header{
-    width: 100%;
-    border-bottom: 2px solid #221e1f; 
-    padding: 26px 0px 23px 7px;
-}
-
-.top{
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    padding: 40px;
-}
-
-.btn{
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    background-color: #2f2f2f;
-    height: 48px;
-}
-
 /*
 ============================================================================
 login
 =============================================================================
 */
-
-.ct_login .box{
-    border: 1px solid #d9d9d9;
-    padding: 0 30px;
-}
-
-.ct_login .conts {
-    padding : 0 25px
-}
-
 .ct_login .social_login{
     margin-left: auto;
     margin-right: auto;
 }
 
-.ct_login .login_kakao_btn{
+/*
+=============================================================================
+join
+==============================================================================
+*/
+.login_header{
+    width: 100%;
+    border-bottom: 2px solid #221e1f;
+}
+
+.login_box {
+    width: 480px;
+    margin : 50px auto;
+    
+    /* border:1px solid #d9d9d9; 네모칸 잘보이라고 임의로 준 border입니다.*/
+}
+
+.find_pwd_box{
+    margin: 0 30px 0 30px;
+}
+
+.xsports_logo{
+    margin-bottom: 20px;
+}
+
+.login_main{
+    margin: 0 50px 0 50px;
+}
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.login_logo{
+    width: 20px;
+    height: 20px;
+}
+
+.login_top_login{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 40px;
+}
+
+.login_kakao_btn{
     font-size: 16px;
     font-weight: 400;
     /* border-color: #fee500; */
@@ -86,7 +94,7 @@ login
     background: url("../img/kakao_login.png") no-repeat 20px center / 20px, #fee500;
 }
 
-.ct_login .login_naver_btn{
+.login_naver_btn{
     font-size: 16px;
     font-weight: 400;
     color: #04cf5d;
@@ -95,17 +103,28 @@ login
     /* border-color: #04cf5d; */
     /* background-color: transparent; 어차피 흰색이라 안넣어주어도됩니다 */
     /*SH 20230113 _ 여기는 보더 컬러뿐만 아니라 스타일도 달라서 아래처럼 넣어줄게요*/
-    border:1px solid #04cf5d;
+    border:2px solid #04cf5d;
     background-position: 20px center;
     background-repeat: no-repeat;
     background-size: 20px;
     background-image: url("../img/naver_login.png");/* 왜인지 모르겠으나.. png파일이 svg 파일로 변환이 안되어..*/
 }
 
-.ct_login .email{
-    font-size: 16px;
+.login_btn{
+    font-size: 16pt;
+    font-weight: 500;
+    color: white;
+    background-color: #2f2f2f;
+    margin-top: 40px;
+    height: 48px;
+}
+
+/*login_button login_kakao login_naver 버튼 3개는 공통적인 성향이 많으니 공통 class를 하나빼면 좋을듯해요. btn_round 라는 클래스를 추가로 줘서 css 를 먹여줄게요! */
+
+
+.login_email{
+    font-size: 16pt;
     font-weight: 400;
-    text-align: center;
     display: flex;
     flex-basis: 100%;
     align-items: center;
@@ -115,84 +134,80 @@ login
     margin-bottom: 25px;
 }
 
-.ct_login .email::before{
+.login_email::before{
     content: "";
     flex-grow: 1;
     background: #ededed;
     height: 1px;
     font-size: 0px;
     line-height: 0px;
-    padding: 0px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 
-.ct_login .email::after{
+.login_email::after{
     content: "";
     flex-grow: 1;
     background: #ededed;
     height: 1px;
     font-size: 0px;
     line-height: 0px;
-    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 10px;
 }
 
-.ct_login .id{
+.login_id{
     width: 100%;
-    height: 46px;
-    border: 1px solid;
+    height: 48px;
+    border: 2px solid;
     border-color: #b4b4b4;
-    display: block;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     padding-left: 20px;
 }
 
-.ct_login .pw{
+.login_pw{
     width: 100%;
-    height: 46px;
-    border: 1px solid;
+    height: 48px;
+    border: 2px solid;
     border-color: #b4b4b4;
-    display: block;
     padding-left: 20px;
 }
 
-.ct_login .remember{
-    padding-top: 20px;
+.login_remember{
+    margin-top: 20px;
 }
 
 label[for="loginRemember"]{
-    font-size: 14px;
+    font-size: 14pt;
     font-weight: 300;
 }
 
-.ct_login .find{
+.login_find{
     text-align: center;
     margin-top: 25px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #000;
-    padding-top: 30px;
 }
 
-.ct_login .find_email{
-    font-size: 14px;
+.login_find_email{
+    font-size: 14pt;
     font-weight: 300;
     margin: 25px;
     border: none;
     background-color: transparent;
 }
 
-.ct_login .find_password{
-    font-size: 14px;
+.login_find_password{
+    font-size: 14pt;
     font-weight: 300;
     margin: 25px;
     border: none;
     background-color: transparent;
 }
 
-.ct_login .bottom{
-    padding: 25px;
+.join{
+    margin-top: 25px;
 }
 
-.ct_login .member_check{
-    font-size: 14px;
+.login_not_member{
+    font-size: 14pt;
     font-weight: 300;
     padding-left:30px;
     background-position: 0px center;
@@ -201,63 +216,87 @@ label[for="loginRemember"]{
     background-image: url("../img/exclamation_mark.png");   
 }
 
-.ct_login .join{
-    font-size: 14px;
+.login_join{
+    font-size: 14pt;
     font-weight: 300;
     border: none;
     background-color: transparent;
     float: right;
-    padding-right: 10px;
 }
 
-/*
-=============================================================================
-join
-==============================================================================
-*/
-
-.ct_join .top{
-    font-size: 24px;
+.find_pw_text,.join_email{
+    font-size: 16pt;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 48px;
 }
 
-.ct_join .join_input{
-    position: relative;
-    border-top: none 0;
-    border-bottom: 2px solid #2f2f2f;
-    margin-bottom: 40px;
+.enter_email{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 48px;
+    border: 2px solid;
+    border-color: #b4b4b4;
 }
 
-.ct_join .join_check{
-    font-size: 16px;
+.btn_style{
+    background-color: #2f2f2f;
+    color: white;
+    border: none;
+    font-size: 16pt;
+    font-weight: 500;
+    height: 48px;
+}
+
+.email_join{
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 300;
+    background-color: #f0f0f0;
+    padding: 48px;
+    margin-bottom: 48px;
+}
+
+.email{
     font-weight: 500;
 }
 
-.ct_join .join_check:after {
+.email_warning{
+    margin-bottom: 48px;
+}
+.email_not_join{
+    color: #c9242b;
+    font-size: 14pt;
+    font-weight: 300;
+    padding-left:45px;
+    background-position: 20px 4px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url("../img/warning_icon.png");
+} 
+
+.join_check{
+    font-size: 16pt;
+    font-weight: 500;
+
+}
+
+.join_check:after {
     content: " *";
     color: #d34a50;
 }
 
-.ct_join .text{
+
+.join_text{
     border: none;
     width: calc(100% - 50px);
     border-color: #2f2f2f;
     height: 40px;
 }
 
-.ct_join .pwd_view{
-    position: absolute;
-    top: 37px;
-    right: 0;
-    width: 30px;
-    height: 30px;
-}
 
-.ct_join .pwd_icon{
-    height: 40px;
-    width: 40px;
-}
-
-.ct_join .agree_text{
+.agree_text{
     color: #2f2f2f;
     border-top: 1px solid; 
     border-bottom: 1px solid;
@@ -270,31 +309,32 @@ join
 }
 
 label[for="join_agree"]{
-    font-size: 16px;
+    font-size: 16pt;
     font-weight: 500;
 }
 
-.ct_join .agreement-box{
-    margin: 20px 0;
+.agreement_check{
+    width: 100%;
+    font-size: 14pt;
+    font-weight: 300;
 }
 
-.ct_join .agreement-cell{
+.agreement-box{
+    margin: 20px 0 20px 0;
+}
+
+.agreement-cell{
     margin-bottom: 5px;
     position: relative;
 }
 
-.ct_join .agreement_check{
-    width: 100%;
-    font-size: 14px;
-    font-weight: 300;
-}
 
-.ct_join .agreement_more_btn{
+.agreement_more_btn{
     border: none;
     background-color:transparent;
     bottom: 50px;
     width: 20px;
-    height: 30px;
+    height: 20px;
     background-position: right;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -304,131 +344,75 @@ label[for="join_agree"]{
     top: 0;
 }
 
-.ct_join .join_btn{
-    padding: 0 40px;
+.join_input{
+    position: relative;
+    border-top: none 0;
+    border-bottom: 2px solid #2f2f2f;
+    margin-bottom: 40px;
+}
+
+.pwd_view{
+    position: absolute;
+    top: 37px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.pwd_icon{
+    height: 40px;
+    width: 40px;
+}
+
+.join_box{
+    margin: 0 30px 0 30px;
+}
+
+.join_btn{
+    padding: 0 35px 0 35px;
     margin-top: 40px;
 }
 
-.ct_join .btn{
-    background-color: #2f2f2f;
-    color: white;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    height: 48px;
-}
-
-/*
-=============================================================================
-find_password
-==============================================================================
-*/
-
-.ct_find_pw .find_pw_text{
-    font-size: 16px;
+.protect_privacy{
+    font-size: 20pt;
     font-weight: 400;
     text-align: center;
-    padding-bottom: 46px;
+    margin: 48px 0 48px 0;
 }
 
-.ct_find_pw .find_pwd_box{
-    margin: 0px 60px;
-}
-
-.ct_find_pw .enter_email{
-    width: 100%;
-    height: 48px;
-    margin-bottom: 16px;
-    border: 2px solid;
-    border-color: #b4b4b4;
-}
-
-/*
-=============================================================================
-join_email
-==============================================================================
-*/
-
-.ct_join_email{
-
-}
-
-.ct_join_email .join_email{
-    font-size: 14pt;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 38px;
-}
-
-.ct_join_email .email_join{
-    border: 1px solid #e1e1e1;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 300;
-    background-color: #f0f0f0;
-    padding: 48px;
-    margin-bottom: 48px;
-}
-.ct_join_email .email{
-    font-weight: 500;
-}
-
-.ct_join_email .email_warning{
-    margin-bottom: 48px;
-}
-.ct_join_email .email_not_join{
-    color: #c9242b;
-    font-size: 14px;
-    font-weight: 300;
-    padding-left:45px;
-    background-position: 20px 4px;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-image: url("../img/warning_icon.png");
-} 
-
-/*
-=============================================================================
-pwd_3months
-==============================================================================
-*/
-
-.ct_join_email .protect_privacy{
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    margin: 50px 0 30px 0;
-}
-
-.ct_join_email .box{
-    padding: 0 10px;
-}
-
-.ct_join_email .pwd_3months{
-    font-size: 16px;
+.pwd_3months{
+    font-size: 16pt;
     font-weight: 400;
     color: #c9242b;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 48px;
     border-bottom: 1px solid #ededed;
 }
 
-.ct_join_email .pwd_warning{
+.email_warning{
+    margin-bottom: 48px;
+}
+
+.pwd_3months_box{
+    padding: 0 30px 0 30px;
+}
+
+.pwd_3months_warning{
+    margin: 48px 0 48px 0;
+}
+
+.pwd_warning{
     color: #262626;
-    font-size: 14px;
+    font-size: 14pt;
     font-weight: 300;
-    padding:0 10px 0 45px;
+    padding-left:45px;
     background-position: 20px 4px;
     background-repeat: no-repeat;
     background-size: 20px;
     background-image: url("../img/exclamation_mark.png");
 } 
 
-.ct_join_email .pwd_3months_warning{
-    margin: 40px 0 0 0;
-}
-
-.ct_join_email .pwd_3months_btn_round {
+.pwd_3months_btn_round {
     height: 44px;
     text-align: center;
     border-radius: 25px;
@@ -438,26 +422,54 @@ pwd_3months
     height: 48px;
 }
 
-.ct_join_email .pwd_3months_btn{
+.pwd_3months_btn{
     display: inline-block;
     width: 48%;
-    padding-top: 40px;
 }
 
-.ct_join_email .later_change{
-    font-size: 16px;
+.later_change{
     background-color: #b9b9b9;
     color: white;
     width: 100%;
 }
 
-.ct_join_email .pwd_change{
-    font-size: 16px;
+.pwd_change{
     background-color: #2f2f2f;
     color: white;
     width: 100%;
 }
 
+.join_email_body{
+    padding: 0 40px 0 40px;
+}
+
+.resend_email_btn{
+    margin: 0 40px 0 40px;
+    width: 80%;
+    float: inline-block;
+}
+
+.ct_login .login_box{
+    border: 1px solid #d9d9d9;
+    padding: 0 30px;
+}
+.ct_login .login_header {
+    padding-top: 30px;
+}
+
+.ct_login .login_main {
+    padding: 0 25px;
+    margin : 0
+}
+
+.ct_login .conts {
+    padding : 0 25px
+}
+
+.ct_login  .join {
+    border-top: 1px solid #000;
+    padding-top: 30px;
+}
 /*
 =====================================================
 
