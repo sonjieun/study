@@ -136,22 +136,22 @@ login
 }
 
 .ct_login .id{
-    width: 100%;
+    width: 98%;
     height: 46px;
     border: 1px solid;
     border-color: #b4b4b4;
     display: block;
     margin-bottom: 8px;
-    padding-left: 20px;
+    padding-left: 2%;
 }
 
 .ct_login .pw{
-    width: 100%;
+    width: 98%;
     height: 46px;
     border: 1px solid;
     border-color: #b4b4b4;
     display: block;
-    padding-left: 20px;
+    padding-left: 2%;
 }
 
 .ct_login .remember{
@@ -336,11 +336,12 @@ find_password
 }
 
 .ct_find_pw .enter_email{
-    width: 100%;
+    width: 98%;
     height: 48px;
     margin-bottom: 16px;
     border: 2px solid;
     border-color: #b4b4b4;
+    padding-left: 2%;
 }
 
 /*
