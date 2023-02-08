@@ -121,7 +121,7 @@ button {
     outline: none;
 }
 
-// input type number 우측 버튼 삭제
+/* input type number 우측 버튼 삭제 */
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
     margin: 0;
@@ -132,7 +132,7 @@ input[type='number']::-webkit-outer-spin-button {
     display: none !important;
 }
 
-// 접근성 텍스트에 사용
+/* 접근성 텍스트에 사용 */
 .blind {
     position: absolute;
     overflow: hidden;
@@ -142,7 +142,7 @@ input[type='number']::-webkit-outer-spin-button {
     margin: -1px;
 }
 
-// 말줄임
+/* 말줄임 */
 .ellipsis {
     overflow: hidden;
     white-space: nowrap;
@@ -153,7 +153,7 @@ input[type='number']::-webkit-outer-spin-button {
     text-decoration: underline;
 }
 
-// 페이지 스크롤 막는 css 클래스
+/* 페이지 스크롤 막는 css 클래스 */
 .block-scroll {
     overflow: hidden !important;
     height: 100%;

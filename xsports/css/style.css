@@ -122,7 +122,6 @@ login
     height: 1px;
     font-size: 0px;
     line-height: 0px;
-    padding: 0px 10px 0px 0px;
 }
 
 .ct_login .email::after{
@@ -132,7 +131,6 @@ login
     height: 1px;
     font-size: 0px;
     line-height: 0px;
-    padding: 0px 0px 0px 10px;
 }
 
 .ct_login .id{
@@ -156,19 +154,44 @@ login
 
 .ct_login .remember{
     padding-top: 20px;
+    padding-bottom: 34px;
 }
 
-label[for="loginRemember"]{
+.ct_login label[for="loginRemember"]{
     font-size: 14px;
     font-weight: 300;
 }
 
+.ct_login input#check_btn + label{
+    cursor:pointer;
+}
+
+.ct_login input#check_btn + label > span{
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.ct_login input#check_btn + label:before{
+    content:"";
+    display:inline-block;
+    width:17px;
+    height:17px;
+    border:1px solid #b4b4b4;
+    vertical-align:middle;
+}
+
+.ct_login input#check_btn:checked + label:before{
+    content:"✔";
+    border-color:#b4b4b4;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
 .ct_login .find{
     text-align: center;
-    margin-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
     border-bottom: 1px solid #000;
-    padding-top: 30px;
+    padding-top: 26px;
 }
 
 .ct_login .find_email{
@@ -188,7 +211,7 @@ label[for="loginRemember"]{
 }
 
 .ct_login .bottom{
-    padding: 25px;
+    padding: 20px;
 }
 
 .ct_login .member_check{
