@@ -483,6 +483,118 @@ pwd_3months
 }
 
 /*
+=============================================================================
+notice
+==============================================================================
+*/
+
+.ct_notice .header{
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid #000;
+    padding-bottom: 40px;
+}
+
+.ct_notice .menu{
+    float: left;
+    width: 49%;
+}
+
+.ct_notice ul{
+    align-items: center;
+    display:inline-block;
+}
+
+.ct_notice li{
+    align-items: center;
+    float: left;
+    height: 40px;
+}
+
+.ct_notice li a{
+    display:inline-block;
+    align-items: center;
+    padding: 0 32px;
+    height: 40px;
+}
+
+.ct_notice li a:hover{
+    align-items: center;
+    border-radius: 25px;
+    height: 40px;
+    background-color: #d8191f;
+}
+
+.ct_notice .header a:visited{ 
+    color: black; 
+    text-decoration: none;
+}
+
+.ct_notice .search_box{
+    float: left;
+    width: 49%;
+    border-radius: 25px;
+    border: 1px solid #d9d9d9;
+}
+
+.ct_notice input{
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.ct_notice .fromdate{
+    border-right: 1px solid #d9d9d9;
+}
+
+.ct_notice .todate{
+    border-right: 1px solid #d9d9d9;
+}
+
+.ct_notice input::placeholder{
+    color: black;
+    font-weight: 200;
+    font-size: 16px;
+    text-align: left;
+}
+
+.ct_notice .list table{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.ct_notice .pagination a{
+    display:inline-block;
+    text-align: center;
+    border: 1px solid #ababab;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+}
+.ct_notice .pagination a:visited{ 
+    color: black; 
+    text-decoration: none;
+}
+
+.ct_notice .detail{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.ct_notice .list .date{
+    color: #ababab;
+}
+
+.ct_notice .list .view{
+    color: #ababab;
+}
+
+.ct_notice .list tr{
+    border-bottom: 1px solid #ababab;
+}
+
+/*
 =====================================================
 
 1. position absolute, relative 공부해서 제가 join 에 here 이라고 표시한 부분을 absolute 로 변경해보기
