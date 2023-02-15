@@ -21,11 +21,12 @@ common
     height: 100vh;
     font-family: 'Noto Sans KR', sans-serif;
     padding: 32px;
+    margin: 0 auto;
 }
 
 .box{
-    border: 1px solid #d9d9d9;
     padding: 0 30px;
+    min-height: 500px;
 }
 
 .btn_round {
@@ -63,7 +64,6 @@ login
 */
 
 .ct_login .box{
-    border: 1px solid #d9d9d9;
     padding: 0 30px;
 }
 
@@ -405,9 +405,9 @@ join_email
     font-size: 14px;
     font-weight: 300;
     padding-left:45px;
-    background-position: 20px 4px;
+    background-position: 20px 2px;
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 16px;
     background-image: url("../img/warning_icon.png");
 } 
 
@@ -442,9 +442,9 @@ pwd_3months
     font-size: 14px;
     font-weight: 300;
     padding:0 10px 0 45px;
-    background-position: 20px 4px;
+    background-position: 20px 2px;
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 16px;
     background-image: url("../img/exclamation_mark.png");
 } 
 
@@ -563,7 +563,10 @@ notice
     font-size: 16px;
     font-weight: 300;
 }
-
+.ct_notice .pagination {
+    text-align: center;
+    margin-top: 20px;
+}
 .ct_notice .pagination a{
     display:inline-block;
     align-items: center;
@@ -599,13 +602,20 @@ notice
     border-bottom: 1px solid #e3e3e3;
     padding: 30px;
 }
+.ct_notice.wrap {
+    min-width: 1200px;
+    margin: 0 auto;
+}   
 
 /*
 =============================================================================
 empl
 ==============================================================================
 */
-
+.ct_empl .box {
+    width: 1200px;
+    margin: 0 auto
+}
 .ct_empl .top{
     font-size: 36px;
 }
@@ -644,7 +654,7 @@ empl
 }
 
 .ct_empl .empl-ex{
-    margin-top: -25px;
+    margin: -25px auto 0 auto;
     width: 900px;
     background-color: #f6f7f7;
     padding: 59px 0;
