@@ -492,7 +492,8 @@ notice
     width: 100%;
     margin: auto;
     border-bottom: 1px solid #000;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
+    overflow: hidden; /* float 하면 overflow처리 */
 }
 
 .ct_notice .menu{
@@ -500,7 +501,7 @@ notice
     width: 49%;
 }
 
-.ct_notice ul{
+.ct_notice .menu ul{
     align-items: center;
     display:inline-block;
 }
@@ -516,6 +517,7 @@ notice
     align-items: center;
     padding: 0 32px;
     height: 40px;
+    line-height: 40px;
 }
 
 .ct_notice li a:hover{
@@ -523,6 +525,7 @@ notice
     border-radius: 25px;
     height: 40px;
     background-color: #d8191f;
+    color: #fff;
 }
 
 .ct_notice .header a:visited{ 
