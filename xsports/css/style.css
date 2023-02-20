@@ -134,22 +134,22 @@ login
 }
 
 .ct_login .id{
-    width: 98%;
-    height: 46px;
+    width: 100%;
+    height: 48px;
     border: 1px solid;
     border-color: #b4b4b4;
     display: block;
     margin-bottom: 8px;
-    padding-left: 2%;
+    padding-left: 20px;
 }
 
 .ct_login .pw{
-    width: 98%;
-    height: 46px;
+    width: 100%;
+    height: 48px;
     border: 1px solid;
     border-color: #b4b4b4;
     display: block;
-    padding-left: 2%;
+    padding-left: 20px;
 }
 
 .ct_login .remember{
@@ -158,8 +158,10 @@ login
 }
 
 .ct_login label[for="loginRemember"]{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
+    height: 48px;
+    padding: 12px 0;
 }
 
 .ct_login input#check_btn + label{
@@ -290,6 +292,31 @@ join
     padding: 14px 0 14px 0;
     margin: 14px 0 14px 0;
     letter-spacing: 1px;
+}
+
+.ct_join input#check_btn + label{
+    cursor:pointer;
+}
+
+.ct_join input#check_btn + label > span{
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.ct_join input#check_btn + label:before{
+    content:"";
+    display:inline-block;
+    width:17px;
+    height:17px;
+    border:1px solid #b4b4b4;
+    vertical-align:middle;
+}
+
+.ct_join input#check_btn:checked + label:before{
+    content:"✔";
+    border-color:#b4b4b4;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 label[for="join_agree"]{
