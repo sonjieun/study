@@ -294,17 +294,13 @@ join
     letter-spacing: 1px;
 }
 
-.ct_join input#check_btn + label{
-    cursor:pointer;
+.ct_join label.agreement_check{
+    display:inline-flex;
+    vertical-align:middle;
 }
 
-.ct_join input#check_btn + label > span{
-    vertical-align: middle;
-    padding-left: 5px;
-}
-
-.ct_join input#check_btn + label:before{
-    content:"";
+.ct_join label.agreement_check::before{
+    content: '';
     display:inline-block;
     width:17px;
     height:17px;
@@ -312,17 +308,13 @@ join
     vertical-align:middle;
 }
 
-.ct_join input#check_btn:checked + label:before{
+.ct_join input[type="checkbox"]:checked + label:before{
     content:"✔";
     border-color:#b4b4b4;
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
-label[for="join_agree"]{
-    font-size: 16px;
-    font-weight: 500;
-}
 
 .ct_join .agreement-box{
     margin: 20px 0;
@@ -333,6 +325,10 @@ label[for="join_agree"]{
     position: relative;
 }
 
+.ct_join .agreement{
+    font-weight: 400;
+}
+
 .ct_join .agreement_check{
     width: 100%;
     font-size: 14px;
@@ -340,18 +336,13 @@ label[for="join_agree"]{
 }
 
 .ct_join .agreement_more_btn{
-    border: none;
-    background-color:transparent;
-    bottom: 50px;
+    position: absolute;
+    display: inline-block;
     width: 20px;
-    height: 30px;
-    background-position: right;
-    background-repeat: no-repeat;
+    height: 20px;
     background-size: 20px;
     background-image: url("../img/agreement_more_icon.png");
-    position: absolute;
     right: 0;
-    top: 0;
 }
 
 .ct_join .join_btn{
