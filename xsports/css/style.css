@@ -524,13 +524,13 @@ notice
     display:inline-block;
 }
 
-.ct_notice li{
+.ct_notice .menu li{
     align-items: center;
     float: left;
     height: 40px;
 }
 
-.ct_notice li a{
+.ct_notice .menu li a{
     display:inline-block;
     align-items: center;
     padding: 0 32px;
@@ -538,16 +538,15 @@ notice
     line-height: 40px;
 }
 
-.ct_notice li a:hover{
+.ct_notice .menu li a:hover{
     align-items: center;
     border-radius: 25px;
     height: 40px;
     background-color: #d8191f;
-    color: #fff;
+    color: white;
 }
 
 .ct_notice .header a:visited{ 
-    color: black; 
     text-decoration: none;
 }
 
@@ -565,11 +564,11 @@ notice
     text-align: center;
 }
 
-.ct_notice .fromdate{
-    border-right: 1px solid #d9d9d9;
+.ct_notice .search{
+    height: 48px;
 }
 
-.ct_notice .todate{
+.ct_notice .border{
     border-right: 1px solid #d9d9d9;
 }
 
@@ -580,10 +579,52 @@ notice
     text-align: left;
 }
 
-.ct_notice .list table{
-    font-size: 16px;
-    font-weight: 300;
+.ct_notice.wrap {
+    min-width: 1200px;
+    margin: 0 auto;
+}   
+
+.ct_notice .title{
+    padding: 30px 30px;
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
 }
+
+.ct_notice .item{
+    position: relative;
+}
+
+.ct_notice .title span{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.ct_notice .title span:nth-of-type(1){
+    width: 10%;
+    text-align: left;
+}
+
+.ct_notice .title span:nth-of-type(2){
+    width: 60%;
+}
+
+.ct_notice .title span:nth-of-type(3){
+    width: 10%;
+    color: #878787;
+}
+
+.ct_notice .title span:nth-of-type(4){
+    width: 10%;
+    color: #878787;
+    text-align: right;
+}
+
+.ct_notice .title span:nth-of-type(5){
+    width: 5%;
+    text-align: right;
+}
+
 .ct_notice .pagination {
     text-align: center;
     margin-top: 20px;
@@ -592,41 +633,11 @@ notice
     display:inline-block;
     align-items: center;
     text-align: center;
-    border: 1px solid #ababab;
+    border: 1px solid #e3e3e3;
     width: 22px;
     height: 22px;
     font-size: 14px;
 }
-.ct_notice .pagination a:visited{ 
-    color: black; 
-    text-decoration: none;
-}
-
-.ct_notice .detail{
-    padding: 35px 90px;
-    font-size: 16px;
-    font-weight: 300;
-    background-color: #fafbfb;
-}
-
-.ct_notice .list .date{
-    color: #878787;
-}
-
-.ct_notice .list .view{
-    color: #878787;
-}
-
-.ct_notice .list tr{
-    display:inline-block;
-    width: 100%;
-    border-bottom: 1px solid #e3e3e3;
-    padding: 30px;
-}
-.ct_notice.wrap {
-    min-width: 1200px;
-    margin: 0 auto;
-}   
 
 /*
 =============================================================================
