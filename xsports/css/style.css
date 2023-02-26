@@ -441,10 +441,15 @@ pwd_3months
     font-weight: 400;
     text-align: center;
     margin: 50px 0 30px 0;
+    line-height: 31px;
 }
 
 .ct_join_email .box{
     padding: 0 10px;
+}
+
+.ct_join_email .main{
+    padding: 0 15px;
 }
 
 .ct_join_email .pwd_3months{
@@ -454,6 +459,7 @@ pwd_3months
     text-align: center;
     padding-bottom: 40px;
     border-bottom: 1px solid #ededed;
+    line-height: 23px;
 }
 
 .ct_join_email .pwd_warning{
@@ -469,6 +475,8 @@ pwd_3months
 
 .ct_join_email .pwd_3months_warning{
     margin: 40px 0 0 0;
+    letter-spacing :-0.2px;
+    line-height: 24px;
 }
 
 .ct_join_email .pwd_3months_btn_round {
@@ -479,26 +487,28 @@ pwd_3months
     font-size: 16pt;
     font-weight: 500;
     height: 48px;
+    display :inline-block;
 }
 
 .ct_join_email .pwd_3months_btn{
-    display: inline-block;
-    width: 48%;
-    padding-top: 40px;
+    padding-top: 58px;
+    text-align: center;
 }
 
 .ct_join_email .later_change{
     font-size: 16px;
     background-color: #b9b9b9;
     color: white;
-    width: 100%;
+    width: 188px;
+    margin-right: 5px;
 }
 
 .ct_join_email .pwd_change{
     font-size: 16px;
     background-color: #2f2f2f;
     color: white;
-    width: 100%;
+    width: 188px;
+    margin-left: 5px;
 }
 
 /*
