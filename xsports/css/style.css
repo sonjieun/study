@@ -39,8 +39,12 @@ common
 .header{
     width: 100%;
     border-bottom: 2px solid #221e1f; 
+}
+
+.xsports_logo{
     padding: 26px 0px 23px 7px;
 }
+
 
 .top{
     font-size: 24px;
@@ -365,11 +369,15 @@ find_password
 ==============================================================================
 */
 
+.ct_find_pw .text{
+    padding-bottom: 46px;
+}
+
 .ct_find_pw .find_pw_text{
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    padding-bottom: 46px;
+    letter-spacing:-1px
 }
 
 .ct_find_pw .find_pwd_box{
@@ -379,7 +387,7 @@ find_password
 .ct_find_pw .enter_email{
     width: 98%;
     height: 48px;
-    margin-bottom: 16px;
+    margin-bottom: 39px;
     border: 2px solid;
     border-color: #b4b4b4;
     padding-left: 2%;
@@ -391,9 +399,6 @@ join_email
 ==============================================================================
 */
 
-.ct_join_email{
-
-}
 
 .ct_join_email .join_email{
     font-size: 14pt;
@@ -708,6 +713,7 @@ empl
 }
 .ct_empl .top{
     font-size: 36px;
+    padding-bottom: 50px;
 }
 
 .ct_empl .empl-img{
@@ -734,20 +740,25 @@ empl
 .ct_empl .empl-text{
     text-align: center;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .ct_empl .arrow{
     margin: auto;
     display: block;
-    padding: 30px 0;
+    padding: 9px 0 33px 0;
 }
 
 .ct_empl .empl-ex{
+    text-align: center;
     margin: -25px auto 0 auto;
     width: 900px;
     background-color: #f6f7f7;
-    padding: 59px 0;
+    padding: 53px 0;
+}
+
+.ct_empl .empl-mainex{
+    line-height:30px;
 }
 
 .ct_empl .empl-subex{
@@ -779,12 +790,13 @@ empl
     background-image: url(../img/bracket.png);
     background-repeat: no-repeat;
     background-position: center center;
-    height: 120px;
+    background-origin: padding-box;
+    text-align: center;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+    padding: 10px 0;
 }
 
-.ct_empl .bracket .empl-text{
-    padding-top: 15px;
-}
 
 .ct_empl .icon{
     margin: auto;
