@@ -48,7 +48,7 @@ common
 
 .top{
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     padding: 40px;
 }
@@ -72,7 +72,7 @@ login
 }
 
 .ct_login .conts {
-    padding : 0 25px
+    padding : 0 58px
 }
 
 .ct_login .social_login{
@@ -161,37 +161,33 @@ login
     padding-bottom: 34px;
 }
 
-.ct_login label[for="loginRemember"]{
-    font-size: 13px;
-    font-weight: 300;
-    height: 48px;
-    padding: 12px 0;
+.ct_login label.remember_chk{
+    display:inline-flex;
+    vertical-align:middle;
 }
 
-.ct_login input#check_btn + label{
-    cursor:pointer;
-}
-
-.ct_login input#check_btn + label > span{
-    vertical-align: middle;
-    padding-left: 5px;
-}
-
-.ct_login input#check_btn + label:before{
-    content:"";
+.ct_login label.remember_chk::before{
+    content: '';
     display:inline-block;
     width:17px;
     height:17px;
     border:1px solid #b4b4b4;
     vertical-align:middle;
+    margin-right: 10px;
 }
 
-.ct_login input#check_btn:checked + label:before{
+.ct_login input[type="checkbox"]:checked + label:before{
     content:"✔";
     border-color:#b4b4b4;
     background-repeat: no-repeat;
     background-position: 50%;
 }
+
+.ct_login .remember_chk{
+    width: 100%;
+    font-size: 14px;
+}
+
 
 .ct_login .find{
     text-align: center;
@@ -217,7 +213,7 @@ login
 }
 
 .ct_login .bottom{
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .ct_login .member_check{
@@ -310,6 +306,7 @@ join
     height:17px;
     border:1px solid #b4b4b4;
     vertical-align:middle;
+    margin-right: 10px;
 }
 
 .ct_join input[type="checkbox"]:checked + label:before{
@@ -319,6 +316,10 @@ join
     background-position: 50%;
 }
 
+.ct_join .agreement_check{
+    width: 100%;
+    font-size: 14px;
+}
 
 .ct_join .agreement-box{
     margin: 20px 0;
@@ -327,16 +328,11 @@ join
 .ct_join .agreement-cell{
     margin-bottom: 5px;
     position: relative;
+    font-weight: 300;
 }
 
 .ct_join .agreement{
-    font-weight: 400;
-}
-
-.ct_join .agreement_check{
-    width: 100%;
-    font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .ct_join .agreement_more_btn{
