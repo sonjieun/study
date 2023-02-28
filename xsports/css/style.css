@@ -809,6 +809,15 @@ empl
     display: block;
 }
 
+
+.ct_main{
+    width: 1200px;
+}
+
+.ct_main .header{
+    align-items: center;
+}
+
 /*
 =====================================================
 
