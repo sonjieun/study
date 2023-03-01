@@ -534,6 +534,7 @@ notice
     float: left;
     width: 50%;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .ct_notice .menu ul{
@@ -546,6 +547,12 @@ notice
     float: left;
     height: 40px;
     padding: 0 20px 0 0;
+}
+
+.ct_notice .menu li.on a{
+    color: #fff;
+    background: #d34a50;
+    border-radius: 50px;
 }
 
 .ct_notice .menu li a{
@@ -602,7 +609,7 @@ notice
     padding-right: 20px;
     background-image: url(../img/calendar.png);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right 8px center;
 }
 
 .ct_notice input[type="date"]::-webkit-inner-spin-button,
@@ -617,14 +624,16 @@ notice
 
 .ct_notice .search{
     width: 85%;
+    text-align: left;
 }
 
 .ct_notice .search_btn{
     width: 20px;
-    height: 30px;
+    height: 48px;
     background-image: url(../img/search.png);
     background-repeat: no-repeat;
     background-position: right center;
+    vertical-align: top;
 }
 
 .ct_notice input::placeholder{
@@ -697,6 +706,13 @@ notice
     text-align: center;
     margin-top: 60px;
 }
+.ct_notice .list .detail {
+    padding : 30px 90px;
+    background-color: #fafbfb;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.5;
+}
 .ct_notice .pagination a{
     display:inline-block;
     align-items: center;
@@ -704,8 +720,16 @@ notice
     border: 1px solid #e3e3e3;
     width: 30px;
     height: 30px;
+    /*글자를 정중앙에 맞추기 shwon_lineheight 높이 - 보더 픽셀 2px*/
+    line-height: 28px;
     font-size: 14px;
     font-weight: 300;
+}
+
+.ct_notice .pagination a.on {
+    background-color: #111;
+    color: #fff;
+    font-weight: 900;
 }
 
 /*
