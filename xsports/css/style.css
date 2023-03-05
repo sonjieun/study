@@ -951,8 +951,8 @@ main
 
 .ct_main .top_1 a{
     font-size: 18px;
-    font-weight: 400;
-    margin-top: 20px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
 }
 
 .ct_main .top_1{
@@ -990,6 +990,7 @@ main
 
 .ct_main .line_1{
     border-top: 1px solid #d4d4d4;
+
 }
 
 .ct_main .top_3{
