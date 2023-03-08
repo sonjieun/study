@@ -1009,13 +1009,6 @@ main
     font-size: 28px;
 }
 
-.ct_main .mid_box{
-    display: table;
-}
-
-.ct_main .mid_box .m_box{
-    display: table-cell;
-}
 
 .ct_main .mid_box .text{
     padding-left: 30px;
@@ -1028,11 +1021,11 @@ main
     float: right;   
 }
 
-.ct_main .box_4 .text{
+.ct_main .table .text{
     vertical-align: top;
 }
 
-.ct_main .box_4 .table>a{
+.ct_main .table>a{
     display: table-cell;
 }
 
