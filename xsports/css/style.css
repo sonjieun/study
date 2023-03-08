@@ -24,6 +24,14 @@ common
     margin: 0 auto;
 }
 
+.table{
+    display: table;
+}
+
+.table>div{
+    display: table-cell;
+}
+
 .box{
     padding: 0 30px;
     min-height: 500px;
@@ -997,17 +1005,8 @@ main
     width: 285px;
 }
 
-.ct_main .border h2{
+.ct_main h2{
     font-size: 28px;
-}
-
-.ct_main .border .table{
-    display: table;
-    padding-top: 26px;
-}
-
-.ct_main .border .table>div{
-    display: table-cell;
 }
 
 .ct_main .mid_box{
@@ -1023,6 +1022,18 @@ main
     vertical-align: top;
     font-size: 20px;
     font-weight: 500;
+}
+
+.ct_main button{
+    float: right;   
+}
+
+.ct_main .box_4 .text{
+    vertical-align: top;
+}
+
+.ct_main .box_4 .table>a{
+    display: table-cell;
 }
 
 /*
