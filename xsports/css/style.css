@@ -846,11 +846,16 @@ empl
 main
 ==============================================================================
 */
+.ct_main .main_top img{
+    width: 100%;
+}
 
 .ct_main{
     width: 100%;
     height: 100%;
+    vertical-align: middle;
 }
+
 
 .ct_main .main_box{
     width: 1200px;
@@ -895,6 +900,7 @@ main
     border-top: 1px solid #d4d4d4; 
     border-bottom: 1px solid #d4d4d4;
     width: 100%;
+    vertical-align: middle;
 }
 
 .ct_main .box_menu{
@@ -908,7 +914,6 @@ main
 
 .ct_main .menu{
     float: left;
-    font-size: 20px;
     font-size: 20px;
     font-weight: 400;
 }
@@ -936,11 +941,6 @@ main
     padding-right: 10px;
 }
 
-.ct_main section{
-    padding: 55px 0;
-    text-align: left;
-}
-
 .ct_main .main_top{
     display: table;
     width: 100%;
@@ -948,8 +948,7 @@ main
 }
 
 .ct_main .border{
-    border-bottom: 2px solid #c9242b;
-    padding-bottom: 62px;
+    border-top: 2px solid #c9242b;
 }
 
 .ct_main .center{
@@ -957,10 +956,19 @@ main
     vertical-align: top;
 }
 
+.ct_main .padding{
+    padding: 50px 0;
+}
+
+.ct_main .s_title{
+    padding-top: 50px;
+}
+
 .ct_main .top_1 a{
     font-size: 18px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    line-height: 32px;
 }
 
 .ct_main .top_1{
@@ -969,6 +977,7 @@ main
 
 .ct_main .top_2{
     width: 590px;
+    padding: 0 20px;
 }
 
 .ct_main .top_3{
@@ -981,24 +990,45 @@ main
 }
 
 .ct_main .top_2 .text{
-    padding-top: 40px;
+    padding-top: 42px;
     display: table;
     width: 100%;
 }
 
+.ct_main .top_2 .text>div:first-child{
+    padding-right: 10px;
+    width: 50%;
+}
+
+.ct_main .top_2 .text>div:last-child{
+    padding-left: 10px;
+    width: 50%;
+}
+
 .ct_main .top_2 .text a{
     width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 32px;
 }
 
 .ct_main .top_2 .text>div{
     display: table-cell;
-    border-top: 2px solid #000000;
 }
 
+.ct_main .top_2 .text>div>div{
+    border-top: 2px solid #000000;
+    padding-top: 9px;
+}
+
+.ct_main .top_text{
+    padding: 9px 0 9px 0;
+}
 
 .ct_main .line_1{
     border-top: 1px solid #d4d4d4;
-
+    padding: 9px 0;
 }
 
 .ct_main .top_3{
@@ -1006,15 +1036,36 @@ main
 }
 
 .ct_main h2{
-    font-size: 28px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
+.ct_main .mid_box{
+    width: 100%;
+}
+
+.ct_main .mid_box a{
+    padding-top: 21px;
+}
+
+.ct_main .mid_box>div:first-child{
+    padding-right: 30px;
+}
+
+.ct_main .mid_box>div:last-child{
+    padding-left: 30px;
+}
+
+.ct_main .mid_box>div{
+    width: 50%;
+}
 
 .ct_main .mid_box .text{
     padding-left: 30px;
     vertical-align: top;
     font-size: 20px;
     font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 .ct_main button{
@@ -1027,6 +1078,83 @@ main
 
 .ct_main .table>a{
     display: table-cell;
+}
+
+.ct_main .box_4 .left a{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 32px;
+}
+
+.ct_main .box_4 {
+    padding-bottom: 50px;
+}
+
+.ct_main .box_4 .table{
+    width: 100%;
+}
+
+.ct_main .box_4 .left{
+    width: 50%;
+}
+
+.ct_main .box_4 .right{
+    width: 50%;
+}
+
+.ct_main .box_4 .text{
+    padding-left: 30px;
+}
+
+.ct_main .box_4 .right .text>div{
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.ct_main .box_4 .table>div:first-child{
+    padding-right: 30px;
+}
+
+.ct_main .box_4 .table>div:last-child{
+    padding-left: 30px;
+}
+
+.ct_main .box_5 .table>div:first-child{
+    padding-right: 30px;
+}
+
+.ct_main .box_5 .table>div:last-child{
+    padding-left: 30px;
+}
+
+.ct_main .box_5 .table{
+    width: 100%;
+}
+
+.ct_main .box_5 .left{
+    width: 50%;
+}
+
+.ct_main .box_5 .right{
+    width: 50%;
+}
+
+.ct_main .box_5 .left .text{
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.ct_main .box_5 .b_border {
+    border-bottom: 2px solid #c9242b;
+    padding-bottom: 50px;
+}
+
+.ct_main .box_6 .display {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*
