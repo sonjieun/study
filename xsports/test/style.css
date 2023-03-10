@@ -1,10 +1,10 @@
 @import "reset.css";
 
-.ct_login .box {
+.box {
     width: 420px;
 }
 
-.ct_login .logo{
+.logo{
     border-bottom: 2px solid #000000;
     padding: 20px 0;
 }
@@ -23,15 +23,18 @@
 }
 
 .ct_login .kakao{
-    background: url(./img/kakao_login.png) 20px center/auto 20px no-repeat #fee500;
+    background: #fee500 url(./img/kakao_login.png) 20px center/auto 20px no-repeat ;
+    border: 1px solid #fee500;
     color: #000000;
+    padding-left: 5px;
 }
 
 .ct_login .naver{
-    background: url(./img/naver_login.png) 20px center/auto 20px no-repeat #ffff;
+    background: #ffff url(./img/naver_login.png) 20px center/auto 20px no-repeat ;
     color: #000000;
-    border: 2px solid #04cf5c;
+    border: 1px solid #04cf5c;
     color: #04cf5c;
+    padding-left: 5px;
 }
 
 .ct_login .bnt_round{
@@ -39,7 +42,7 @@
     border-radius: 50px;
     font-size: 16px;
     font-weight: 400;
-    padding: 9px 0 9px 5px;
+    padding: 9px 0;
 }
 
 .ct_login .p hr{
@@ -50,12 +53,14 @@
     position: relative;
 }
 
-.ct_login .p p{
+.ct_login .p h2{
     background-color: #ffff;
     z-index: 2;
     width: 126px;
     margin: 0 auto;
     position: relative;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .ct_login .text_box{
@@ -73,7 +78,11 @@
     font-weight: 300;
 }
 
-.ct_login .login input[id="check1"] + label p{
+.ct_login .check{
+    text-align: left;
+}
+
+.ct_login .login input + label p{
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -81,11 +90,104 @@
     vertical-align: middle;
 }
 
-.ct_login .login input[id="check1"]:checked + label p{
+.ct_login .login input:checked + label p{
     background: url(./img/checked.png) 0 0 no-repeat;
 }
 
-.ct_login .bnt{
+.ct_login .login .bnt{
     color: #ffff;
     background: #2f2f2f;
+    border: 1px solid #2f2f2f;
+}
+
+.ct_login .find{
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.ct_login .find a:first-child{
+    padding-right: 15px;
+}
+
+.ct_login .find a:last-child{
+    padding-left: 15px;
+}
+
+.ct_login .join{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.ct_login .join p{
+    background: url(./img/exclamation_mark.png) 0 center/auto 20px no-repeat;
+    text-align: left;
+    display: table-cell;
+    padding-left: 27px;
+}
+
+.ct_login .join a{
+    background: url(./img/join.png) right center/auto 14px no-repeat;
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* -------------------------------------------------------------------- */
+
+.ct_3month main{
+    text-align: center;
+}
+
+.ct_3month .top{
+    color: #000000;
+    font-weight: 400;
+    border-bottom: 1px solid #ededed;
+}
+
+.ct_3month .top .change{
+    font-size: 20px;
+}
+
+.ct_3month span{
+    color: #c9242b;
+}
+
+.ct_3month .three{
+    font-size: 16px;
+}
+
+.ct_3month .mid{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.ct_3month .mid p{
+    background: url(./img/exclamation_mark.png) 0 center/auto 20px no-repeat;
+    padding-left: 25px;
+}
+
+.ct_3month .bottom{
+    display: flow-root;
+}
+
+.ct_3month .bottom button{
+    width: 49%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffff;
+    border-radius: 50px;
+    padding: 11px 0;
+}
+
+.ct_3month .bottom .last{
+    background:#b9b9b9;
+    float: left;
+}
+
+.ct_3month .bottom .change{
+    background:#2f2f2f;
+    float: right;
 }

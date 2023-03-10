@@ -178,5 +178,14 @@ input[type='number']::-webkit-outer-spin-button {
     margin: 0 auto;
 }
 
+.box {
+    width: 420px;
+}
+
+.logo{
+    border-bottom: 2px solid #000000;
+    padding: 20px 0;
+}
+
 
 /*background: url() 패딩 위치 반복 사이즈 색상;*/
