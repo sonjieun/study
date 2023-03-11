@@ -93,7 +93,7 @@
     padding-left: 10px;
 }
 
-.ct_login .check_box input + label:checked em{
+.ct_login .check_box input:checked + label em{
     display: inline-block;
     width: 20px;
     height: 20px;

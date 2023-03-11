@@ -191,3 +191,48 @@
     background:#2f2f2f;
     float: right;
 }
+
+/*-----------------------------------------------------------------------------------------*/
+
+.ct_join{
+    width: 420px;
+}
+
+.ct_join header{
+    border-bottom: 2px solid #000000;
+    padding: 25px 0 20px 7px;
+}
+
+.ct_join main{
+    width: 380px;
+}
+
+.ct_join h1{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding: 33px 0 23px 0;
+}
+
+.ct_join .enter p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ct_join .enter>div{
+    border-bottom: 2px solid #000000;
+    width: 100%;
+}
+
+.ct_join .enter .pwd em{
+    background: url(./img/pwd_icon.png) 20px center/auto 20px no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.ct_join .enter input::placeholder{
+    color: #ababab;
+    font-size: 13px;
+    font-weight: 300;
+}
