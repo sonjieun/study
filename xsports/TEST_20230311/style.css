@@ -1,0 +1,155 @@
+@import "reset.css";
+
+.ct_login {
+    width: 420px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ct_login .box{
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+
+.ct_login header{
+    border-bottom: 2px solid #000000;
+}
+
+.ct_login header img{
+    padding: 20px 0 20px 7px;
+}
+
+.ct_login h1{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 35px 0 30px 0;
+}
+
+.ct_login .kakao{
+    background: #fee500 url(./img/kakao_login.png) 20px center/auto 20px no-repeat;
+    border: 1px solid #fee500;
+}
+
+.ct_login .naver{
+    background: #ffffff url(./img/naver_login.png) 23px center/auto 15px no-repeat;
+    border: 1px solid #04cf5c;
+    color: #04cf5c;
+}
+
+.ct_login .top .button{
+    padding-bottom: 12px;
+}
+
+.ct_login .btn{
+    border-radius: 50px;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.ct_login .line{
+    text-align: center;
+    align-items: center;
+}
+
+.ct_login .line hr{
+    border-color: #ededed;
+    color: #ededed;
+}
+
+.ct_login .line{
+    padding: 40px 0 20px 0;
+}
+
+.ct_login .login input{
+    color: #ffff;
+    border: 1px solid #ababab;
+    padding: 13px 18px;
+    width: 100%;
+}
+
+.ct_login .login div:first-child{
+    padding-bottom: 8px;
+}
+
+.ct_login .login input::placeholder{
+    color: #ababab;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.ct_login .check_box{
+    font-weight: 300;
+    padding: 20px 0 33px 0;
+    text-align: left;
+}
+
+.ct_login .check_box input + label em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ffffff url(./img/checkbox.png) 0px center/auto 20px no-repeat;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.ct_login .check_box input + label:checked em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ffffff url(./img/checked.png) 0px center/auto 20px no-repeat;
+}
+
+.ct_login .loginbtn{
+    background: #2f2f2f;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.ct_login .find{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 28px 0 38px 0;
+}
+
+.ct_login .find div:first-child{
+    width: 50%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.ct_login .find div:last-child{
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.ct_login .join{
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+    border-top: 1px solid #000000;
+    padding-right: 10px;
+    padding-top: 18px;
+}
+
+.ct_login .join div:first-child{
+    text-align: left;
+}
+
+.ct_login .join div:last-child{
+    text-align: right;
+}
+
+.ct_login .join p{
+    background: url(./img/exclamation_mark.png) 0px center/auto 15px no-repeat;
+    padding-left: 20px;
+}
+
+.ct_login .join a{
+    background: url(./img/join.png) 0px center/auto 12px no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+
