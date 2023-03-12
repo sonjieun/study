@@ -236,3 +236,107 @@
     font-size: 13px;
     font-weight: 300;
 }
+
+/*-----------------------------------------------------------------------------------------*/
+
+.ct_empl .box {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ct_empl .top{
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+.ct_empl .empl-img{
+    padding-bottom: 50px;
+    margin: auto;
+    display: block;
+}
+
+.ct_empl .middle{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.ct_empl .line{
+    border-right: 1px solid black;
+    width: 1px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 37px;
+}
+
+.ct_empl .empl-text{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ct_empl .arrow{
+    margin: auto;
+    display: block;
+    padding: 9px 0 33px 0;
+}
+
+.ct_empl .empl-ex{
+    text-align: center;
+    margin: -25px auto 0 auto;
+    width: 900px;
+    background-color: #f6f7f7;
+    padding: 53px 0;
+}
+
+.ct_empl .empl-mainex{
+    line-height:30px;
+}
+
+.ct_empl .empl-subex{
+    margin-top: 38px;
+}
+
+.ct_empl .store{
+    background-position: 115px 2.5px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-image: url("../img/exclamation_mark.png");
+}
+
+
+.ct_empl .btn{
+    background-color: #d8191f;
+    width: 380px;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    width: 380px;
+    border-radius: 50px;
+    padding: 9px 0;
+    color: #ffffff;
+}
+
+.ct_empl .empl-btn{
+    padding-top: 40px;
+}
+
+
+.ct_empl .bracket{
+    background-image: url(../img/bracket.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: padding-box;
+    text-align: center;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+    padding: 10px 0;
+}
+
+
+.ct_empl .icon{
+    margin: auto;
+    display: block;
+}
